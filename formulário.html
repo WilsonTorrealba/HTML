@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO HTML</title>
+</head>
+<body>
+
+    <form action="formulárioindex.html" method="post">
+        <h3>Preencha o seguinte formulário de currículo</h3>
+        <fieldset>
+            <legend>DADOS PESSOAIS</legend>
+            <br>
+            <label for="nome">Nome Completo</label>
+            <input type="nome" name="nome" placeholder="Nome completo" required autofocus autocomplete>
+
+            <br>
+            <label for="number">CPF</label>
+            <input type="number" name="CPF" placeholder="000.000.000-00" required>
+
+            <br>
+            <label for="number">RG ou RNE</label>
+            <input type="text" name="RG ou RNE" required>
+
+            <br>
+            <label for="">Data de nascimento</label>
+            <input type="data" name="Data de nascimento" placeholder="DD/MM/AAAA" required>
+
+            <br>      
+        </fieldset>
+        <fieldset>
+            <legend>DADOS DE CONTATO</legend>
+            <br>
+            <label for="">Telefone</label>
+            <input type="number" name="Telefone" placeholder="OPCIONAL">
+
+            <br>
+            <label for="">Celular</label>
+            <input type="number" name="Celular" placeholder="(DDD) 00000-0000" required>
+
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required autocomplete>
+
+
+            <br>
+            <label for="Linkedin">Linkedin</label>
+            <input type="link" name="Linkedin" id="Linkedin">
+
+            <br>
+            <label for="Instagram">Instagram</label>
+            <input type="link" name="Instagram" id="Instagram">
+
+            <br>
+            <label for="Portfólio">Portfólio</label>
+            <input type="link" name="Portfólio" id="Portfólio">
+
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>DADOS DE ENDEREÇO</legend>
+            <br>
+            <label for="">Logradouro</label>
+            <input type="text" name="Logradouro" required>
+
+            <br>
+            <label for="">Número</label>
+            <input type="number" name="Número da casa" required>
+
+            <br>
+            <label for="">Complemento</label>
+            <input type="text" name="Complemento" required>
+            
+            <br>
+            <label for="">Bairro</label>
+            <input type="text" name="Bairro" required>
+
+            <br>
+            <label for="">Cidade</label>
+            <input type="text" name="Cidade" required>
+            
+            <br>
+            <select name="Estado" required>
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceara</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">	Espírito Santo</option>
+                <option value=GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">	Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>EXPERIÊNCIAS PROFISSIONAIS</legend>
+            <br>
+            <label for="">Empresa</label>
+            <input type="text" name="Empresa" >
+
+            <br>
+            <label for="">Telefone</label>
+            <input type="number" name="TelefoneEmpresa" placeholder="(DDD) 00000-0000">
+           
+            <br>
+            <label for="">Bairro</label>
+            <input type="text" name="Bairro">
+
+            <br>
+            <label for="">Cidade</label>
+            <input type="text" name="Cidade">
+
+            <br>
+            <select name="Estado" required>
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceara</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">	Espírito Santo</option>
+                <option value=GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">	Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            <br>
+            <label for="">Admissão</label>
+            <input type="date" name="Admissão">
+
+            <br>
+            <label for="">Demissão</label>
+            <input type="date" name="Demissão">
+
+            <br>
+            <label for="">Função</label>
+            <input type="text" name="Função" >
+
+            <br>
+            <label for="">Salário</label>
+            <input type="number" name="Salário" >
+
+            <br>
+            <button>Adicionar outras experiências</button>
+            <!-- OUTRA OPÇÃO
+            <a href="#">Adicionar outras experiências</a> -->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>CURSOS</legend>
+            <br>
+            <label for="">Curso</label>
+            <input type="text" name="Curso">
+
+            <br>
+            <label for="">Instituição</label>
+            <input type="text" name="Instituição">
+
+            <br>
+            <label for="">Data de Início</label>
+            <input type="date" name="Data de Início">
+
+            <br>
+            <label for="">Data de Final</label>
+            <input type="date" name="Data de Final">
+
+            <br>
+            <label for="">Adicione o certificado</label>
+            <input type="file" name="Certificado">
+        </fieldset>
+        <fieldset>
+            <legend>FORMAÇÃO</legend>
+            <br>
+            <label for="">Curso</label>
+            <input type="text" name="Curso">
+
+            <br>
+            <label for="">Instituição</label>
+            <input type="text" name="Instituição">
+
+            <br>
+            <label for="Situação">Situação</label>
+            <input type="radio" name="Situação" id="Situação" value="Cursando"> Cursando
+            <input type="radio" name="Situação" id="Situação" value="Concluido"> Concluido
+            <input type="radio" name="Situação" id="Situação" value="Trancado"> Trancado
+
+            <br>
+            <label for="">Data de Início</label>
+            <input type="date" name="Data de Início">
+
+            <br>
+            <label for="">Data de Final</label>
+            <input type="date" name="Data de Final">
+
+            <br>
+            <label for="">Adicione o certificado</label>
+            <input type="file" name="Certificado">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>OUTRAS INFORMAÇÕES</legend>
+            <textarea name=""  placeholder="Atribuções"></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

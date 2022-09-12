@@ -117,15 +117,142 @@
         </tbody>
     </table>
 
+
+    <!-- <input type="text" name="nome" id="nome" class="" value="123" readonly> 
+    
+    <readonly> permite enviar junto no formulário 
+    <diseable> nao envia junto com os dados do formulário
+    mas nenhum dos dois permite alterar o valor 
+
+    <class> seletor
+    <autocomplete="ON" or "off"> completar ou não os dados utilizados
+    <id>  seletor que não pode se repetir
+    <value> valor de exemplo no input
+    <autofocus> carrega o cursor já dentro do input
+    -->
+
     <h2>Formulario</h2>
-    <form action="#" method="post">
+    <form action="index.HTML" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome completo</label>
+            <input type="text" name="nome" id="nome" minlength="2" required placeholder="Nome completo">
+            
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            
+            <br>
+            <label for="senha">Senha</label>
+            <input type="password" name="password">
+
+        </fieldset>
+
+    <!-- <input type="text" name="nome" id="nome" class="" value="123" readonly> 
+    
+    <readonly> permite enviar junto no formulário 
+    <diseable> nao envia junto com os dados do formulário
+    mas nenhum dos dois permite alterar o valor 
+
+    <class> seletor
+    <autocomplete="ON" or "off"> completar ou não os dados utilizados
+    <id>  seletor que não pode se repetir
+    <value> valor de exemplo no input
+    <autofocus> carrega o cursor já dentro do input
+    <required> torna o campo obrigatório
+    <minlength> minimo de caracteres
+    <maxlength> maximo de caracteres
+    -->
+
         <label for="nome">Nome completo</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" minlength="2" required placeholder="Nome completo">
+        
         <br>
-        <label for="email">E-MAIL</label>
-        <input type="text" name="email" id="email">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+        
         <br>
-        <input type="submit" value="ENVIAR">
+        <label for="senha">Senha</label>
+        <input type="password" name="password">
+
+        <br>
+        <label for="cor">Cor preferida</label>
+        <input type="checkbox" name="cor" value="Preto"> Preto
+        <input type="checkbox" name="cor" value="Rosa"> Rosa
+        <input type="checkbox" name="cor" value="Amarelo"> Amarelo
+
+        <br>
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" value="masc"> Masculino
+        <input type="radio" name="sexo" value="fem"> Femenino
+
+        <br>
+        <label for="numero">Número de telefone</label>
+        <input type="number" name="numero" placeholder="Preencha apenas números">
+
+        <br>
+        <label for="">Envie seu arquivo</label>
+        <input type="file" name="arquivo">
+        <!-- Posso colocar o atributo <multiple> para selecionar varios arquivos -->
+
+        <br>
+        <label for="">Cores</label>
+        <input type="color" name="Cores" value="#EA3939">
+
+        <br>
+        <label for="">Foto</label>
+        <input type="image" name="foto" value="Anexe sua imagem">
+
+        <br>
+        <input type="hidden" name="id">
+
+        <br>
+        <label for="">Data</label>
+        <input type="date" nome="data">
+
+        <br>
+        <label for="">Hora</label>
+        <input type="time" nome="hora">
+
+        <br>
+        <label for="">Data</label>
+        <input type="datetime-local" nome="datahora">
+
+        <br>
+        <label for="">Valor</label>
+        <input type="range" name="Valor">
+
+        <br>
+
+        <br>
+        <!-- Tem que ter o primeiro option para conseguir pedir para o usuario escolher a opçao -->
+        <select name="Estados" required>
+            <option value="">Selecione un estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SC">Rio Grande do Sul</option>
+            
+        </select>
+                    
+        <br>
+        <textarea name=""></textarea> 
+        <!-- O professor apaga (cols="60" rows="10") e estiliza no CSS  -->
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Atribuições"
+        maxlength="30"></textarea>
+
+
+
+
+
+
+
+        <br>
+        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
+        <!-- Melhor usar button para poder estilizar mais facil em CSS e JS  -->
+
+        
 
     </form>
 
