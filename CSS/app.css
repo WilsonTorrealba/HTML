@@ -1,1 +1,59 @@
-[]OOO
+/* seletor {
+    propriedade: valor;
+} */
+
+h1 {
+    color: green;
+}
+
+/* SELETORES*/
+h1 {
+    color: #000;
+}
+
+.red {
+    color: red;
+}
+
+input[name="numero"] {
+    width: 200px;
+    height: 40px;
+    background: #ccc;
+}
+
+/*   *=tudo   */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* EXEMPLO CSS  */
+
+body {
+    background: url(https://img.freepik.com/fotos-premium/fundo-futurista-moderno-da-luz-de-neon_33739-414.jpg?w=2000);
+    /* background-repeat: repeat-x; */
+    /* background-repeat: no-repeat; */
+    background-size: 100vw;
+    background-position: center;
+}
+
+
+.container{
+    /* O width e o height posso usar com pixels ou pocentagem */
+    width: 70%;
+    max-width: 500px;
+    height: 200px;
+    margin: 5px auto;
+    /* margin: 12px 24px;  */
+    /* margin: 12px 3px 6px 9px;  */
+
+    /* COMO COLOCAR AS CORES  */
+    /* background: blueviolet; */               /*cor pelo nome*/
+    /*background: rgb(5, 150, 255); */         /*rgb*/
+    /* background: rgba(20, 50, 50, 0.1); */    /*rgba (com opacidade)*/
+    background: rgba(red, green, blue, alpha);
+    padding: 10px;
+
+
+
+}
